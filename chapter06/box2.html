@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1, .box2 {
+            color: white;
+        }
+
+        .box1 {
+            box-sizing: border-box; /* 테두리까지 포함해서 너빗값을 정함 */
+            border: 1px solid black;
+
+            padding: 10px;
+
+            width: 200px;
+            height: 200px;
+
+            background-color: red;
+        }
+
+        .box2 {
+            border: 1px solid black;
+
+            padding: 10px;
+
+            width: 178px; /* 10픽셀 패딩을 만들었을때 20씩 줄여야 크기가 맞음 */
+            height: 178px; /* 1픽셀 보더를 만들었을때 2씩 줄여야 크기가 맞음 */
+
+            background-color: blue;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            margin: 5px auto; /* 시계방향으로 여백, auto 좌우 가운데 정렬 */
+
+            border-left: 5px solid black;
+            width: 500px;
+            height: 500px;
+
+            background-color: gray;
+        }
+
+        .side {
+            width: 100px;
+            height: 100%;
+
+            background-color: white;
+
+            box-shadow: 1px 0px 5px 1px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">내용</div>
+    <div class="box2">내용</div>
+
+    <div class="container">
+        <div class="side">
+
+        </div>
+    </div>
+</body>
+</html>
